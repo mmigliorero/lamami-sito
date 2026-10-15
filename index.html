@@ -530,6 +530,16 @@ body.page-natale .christmas-section{margin-top:3rem;min-height:75vh}
 .accessori-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.3rem,5vw,3.6rem);font-style:italic;color:var(--plum);margin-bottom:.6rem}
 .accessori-section .grid{margin-top:2rem}
 #prodotto-portachiavi-anguria .p-hero img,#prodotto-porta-girasole .p-hero img{object-position:center center}
+
+/* Borse: immagini centrate, senza tagli indesiderati */
+.classy-hero img,.classy-gallery img,.classy-gallery video{object-position:center center!important;margin-left:auto;margin-right:auto;}
+.classy-gallery{justify-items:center;align-items:center;}
+.classy-gallery img,.classy-gallery video{max-width:100%;object-fit:contain!important;}
+a.card-link[href^="#prodotto-borsa"] img,a.card-link[href^="#prodotto-f-bag"] img,a.card-link[href^="#prodotto-m-bag"] img,a.card-link[href^="#prodotto-v-bag"] img,a.card-link[href^="#prodotto-a-bag"] img{object-position:center center!important;}
+
+#prodotto-pumpkin-beanie .p-hero,#prodotto-bear-beanie .p-hero{height:auto;min-height:0;padding:5rem 1.5rem 0;background:var(--oat);overflow:visible;text-align:center;display:block;}
+#prodotto-pumpkin-beanie .p-hero img,#prodotto-bear-beanie .p-hero img{display:block;width:min(100%,520px)!important;height:auto!important;max-height:none!important;object-fit:contain!important;margin:auto;}
+#prodotto-pumpkin-beanie .p-hero-title,#prodotto-bear-beanie .p-hero-title{position:static;background:none;color:var(--ink);padding:1.35rem 0 0;text-align:center;}
 </style>
 <style id="lamami-card-uniform-fix">
 /* Consistent catalog and gift cards, including uneven title lengths */
@@ -655,10 +665,10 @@ body.page-natale .christmas-section{margin-top:3rem;min-height:75vh}
     <a class="card-link" href="#contatti"><div class="card custom-card"><div class="card-body"><h4>La vuoi tutta tua?</h4><p class="desc">Ogni chalk bag è interamente personalizzabile: colori, dettagli e soggetto possono nascere da una tua idea. Se hai in mente qualcosa di particolare o un progetto da propormi, scrivimi in direct.</p><span class="direct-link">Scrivimi in direct →</span></div></div></a>
   </div></div>
   <div class="categoria" id="bags"><h3 class="categoria-titolo">Classy Bags</h3><div class="grid">
-    <a class="card-link" href="#prodotto-fra"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-005.webp" alt="F bag"><div class="card-body"><h4>F bag</h4><p class="desc">Un'occasione speciale, cento piccoli dettagli cuciti a mano.</p></div></div></a>
-    <a class="card-link" href="#prodotto-marti"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-006.webp" alt="M bag"><div class="card-body"><h4>M bag</h4><p class="desc">La borsa della testimone: versatile, luminosa e con una fodera che sorprende.</p></div></div></a>
-    <a class="card-link" href="#prodotto-vale"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-007.webp" alt="V bag"><div class="card-body"><h4>V bag</h4><p class="desc">Una personalizzazione del modello Marti, con tracolla più lunga e lurex rosa.</p></div></div></a>
-    <a class="card-link" href="#prodotto-ale"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-008.webp" alt="A bag"><div class="card-body"><h4>A bag</h4><p class="desc">Mattonelle all'uncinetto e cordino champagne: semplice, ma con la luce giusta.</p></div></div></a>
+    <a class="card-link" href="#prodotto-fra"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-005.webp" alt="F. bag"><div class="card-body"><h4>F. bag</h4><p class="desc">Un'occasione speciale, cento piccoli dettagli cuciti a mano.</p></div></div></a>
+    <a class="card-link" href="#prodotto-marti"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-006.webp" alt="M. bag"><div class="card-body"><h4>M. bag</h4><p class="desc">La borsa della testimone: versatile, luminosa e con una fodera che sorprende.</p></div></div></a>
+    <a class="card-link" href="#prodotto-vale"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-007.webp" alt="V. bag"><div class="card-body"><h4>V. bag</h4><p class="desc">Una personalizzazione del modello Marti, con tracolla più lunga e lurex rosa.</p></div></div></a>
+    <a class="card-link" href="#prodotto-ale"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-008.webp" alt="A. bag"><div class="card-body"><h4>A. bag</h4><p class="desc">Mattonelle all'uncinetto e cordino champagne: semplice, ma con la luce giusta.</p></div></div></a>
   </div></div>
 </div>
 </section>
@@ -701,12 +711,8 @@ body.page-natale .christmas-section{margin-top:3rem;min-height:75vh}
       </div>
     </a>
   
-    <a class="card-link" href="#prodotto-funny-beanies">
-      <div class="card">
-        <img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-013.webp" alt="Funny Beanie a forma di zucca indossato">
-        <div class="card-body"><h4>Funny Beanies</h4><p class="desc">Zucca, orsetto o qualsiasi idea ti venga in mente.</p></div>
-      </div>
-    </a>
+    <a class="card-link" href="#prodotto-pumpkin-beanie"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-013.webp" alt="Pumpkin Beanie arancione"><div class="card-body"><h4>Pumpkin Beanie</h4><p class="desc">Un cappellino a forma di zucca, tutto da personalizzare.</p></div></div></a>
+    <a class="card-link" href="#prodotto-bear-beanie"><div class="card"><img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-071.webp" alt="Bear Beanie con orecchie da orsetto"><div class="card-body"><h4>Bear Beanie</h4><p class="desc">Un cappellino con dolci orecchie da orsetto.</p></div></div></a>
     <a class="card-link" href="#prodotto-classic-beanie">
       <div class="card">
         <img class="swatch catalog-img" loading="lazy" decoding="async" src="media/lamami-014.webp" alt="Classic Beanie blu indossato">
@@ -732,7 +738,8 @@ body.page-natale .christmas-section{margin-top:3rem;min-height:75vh}
     <div class="christmas-grid">
       <a class="christmas-card" href="#prodotto-balaclava-antonia"><img data-christmas-product="balaclava" alt="Balaclava Antonia fatta a mano"><div class="christmas-card-body"><h3>Balaclava Antonia</h3><p>Un abbraccio morbido per le giornate più fredde.</p><span>Scopri il regalo →</span></div></a>
       <a class="christmas-card" href="#prodotto-classic-beanie"><img data-christmas-product="classic" alt="Classic Beanie fatto a mano"><div class="christmas-card-body"><h3>Classic Beanie</h3><p>Lana grossa, caldissima e morbidissima. Un classico da regalare.</p><span>Scopri il regalo →</span></div></a>
-      <a class="christmas-card" href="#prodotto-funny-beanies"><img data-christmas-product="funny" alt="Funny Beanies fatti a mano"><div class="christmas-card-body"><h3>Funny Beanies</h3><p>Zucche, orsetti e idee tutte da inventare: per grandi e piccoli.</p><span>Scopri il regalo →</span></div></a>
+      <a class="christmas-card" href="#prodotto-pumpkin-beanie"><img src="media/lamami-013.webp" alt="Pumpkin Beanie arancione"><div class="christmas-card-body"><h3>Pumpkin Beanie</h3><p>Un cappellino a forma di zucca, per grandi e piccoli.</p><span>Scopri il regalo →</span></div></a>
+      <a class="christmas-card" href="#prodotto-bear-beanie"><img src="media/lamami-071.webp" alt="Bear Beanie con orecchie"><div class="christmas-card-body"><h3>Bear Beanie</h3><p>Un cappellino con orecchie da orsetto, tenerissimo da regalare.</p><span>Scopri il regalo →</span></div></a>
       <a class="christmas-card" href="#prodotto-fascia-lana"><img src="media/lamami-015.webp" alt="Fascia in lana fatta a mano"><div class="christmas-card-body"><h3>Fascia in lana</h3><p>100% lana, per tenere al caldo anche nelle giornate più fredde.</p><span>Scopri il regalo →</span></div></a>
       <a class="christmas-card" href="#prodotto-fascia-cintura"><img src="media/lamami-018.webp" alt="Fascia verde all’uncinetto"><div class="christmas-card-body"><h3>Fascia per capelli / cintura</h3><p>Due modi di indossarla, un unico regalo fatto a mano. Pattern di @arual.lab.</p><span>Scopri il regalo →</span></div></a>
       <a class="christmas-card" href="#prodotto-portachiavi-anguria"><img src="media/lamami-016.webp" alt="Portachiavi anguria all’uncinetto"><div class="christmas-card-body"><h3>Portachiavi Anguria</h3><p>Un piccolo regalo colorato, in cotone e imbottito a mano.</p><span>Scopri il regalo →</span></div></a>
@@ -839,20 +846,20 @@ body.page-natale .christmas-section{margin-top:3rem;min-height:75vh}
 
 <div id="prodotto-fra" class="prodotto-detail classy-detail" style="display:none;">
 <div class="back-row"><a href="#articoli">← Torna agli articoli</a></div>
-<div class="classy-hero"><img src="media/lamami-005.webp" alt="F bag indossata" loading="lazy"><div class="classy-copy"><span class="eyebrow">Classy Bag · per un’occasione speciale</span><h1>F bag</h1><p>Questa borsa nasce da una commissione molto speciale, per una persona ancora più speciale e per uno di quei giorni che meritano qualcosa di unico.</p><p>Realizzata a mano in cordino color panna, ha una linea elegante ma volutamente versatile: abbastanza raffinata per accompagnare un’occasione importante, ma non così formale da poter essere indossata una volta sola.</p><p>La versione realizzata per questa occasione è impreziosita da <strong>100 perline, cucite a mano una ad una</strong>. Un dettaglio che ha richiesto un po’ di pazienza (parecchia, in realtà), ma che la rende davvero unica.</p></div></div>
-<div class="classy-gallery"><img class="wide" src="media/lamami-030.webp" alt="Dettaglio F bag" loading="lazy"><video class="wide" controls playsinline preload="metadata"><source src="media/lamami-031.mp4" type="video/mp4"></video></div><div class="classy-note"><h3>Partiamo da qui, poi rendiamola tua.</h3><p>Colori, cordini, fodere, lunghezza della tracolla e dettagli possono essere personalizzati. Hai un'idea o un progetto da propormi? <a href="#contatti">Scrivimi in direct</a>.</p></div></div>
+<div class="classy-hero"><img src="media/lamami-005.webp" alt="F. bag indossata" loading="lazy"><div class="classy-copy"><span class="eyebrow">Classy Bag · per un’occasione speciale</span><h1>F. bag</h1><p>Questa borsa nasce da una commissione molto speciale, per una persona ancora più speciale e per uno di quei giorni che meritano qualcosa di unico.</p><p>Realizzata a mano in cordino color panna, ha una linea elegante ma volutamente versatile: abbastanza raffinata per accompagnare un’occasione importante, ma non così formale da poter essere indossata una volta sola.</p><p>La versione realizzata per questa occasione è impreziosita da <strong>100 perline, cucite a mano una ad una</strong>. Un dettaglio che ha richiesto un po’ di pazienza (parecchia, in realtà), ma che la rende davvero unica.</p></div></div>
+<div class="classy-gallery"><img class="wide" src="media/lamami-030.webp" alt="Dettaglio F. bag" loading="lazy"><video class="wide" controls playsinline preload="metadata"><source src="media/lamami-031.mp4" type="video/mp4"></video></div><div class="classy-note"><h3>Partiamo da qui, poi rendiamola tua.</h3><p>Colori, cordini, fodere, lunghezza della tracolla e dettagli possono essere personalizzati. Hai un'idea o un progetto da propormi? <a href="#contatti">Scrivimi in direct</a>.</p></div></div>
 <div id="prodotto-marti" class="prodotto-detail classy-detail" style="display:none;">
 <div class="back-row"><a href="#articoli">← Torna agli articoli</a></div>
-<div class="classy-hero"><img src="media/lamami-006.webp" alt="M bag" loading="lazy"><div class="classy-copy"><span class="eyebrow">Classy Bag · la borsa della testimone</span><h1>M bag</h1><p>Anche questa nasce per un matrimonio, ma questa volta per accompagnare la testimone.</p><p>L’idea era creare una borsa semplice e versatile, scegliendo però un materiale capace di darle quel qualcosa in più: il <strong>cordino lurex verde</strong>, che cattura la luce senza risultare eccessivo.</p><p>All’interno nasconde una piccola sorpresa: una <strong>fodera decorata con limoni e motivi botanici</strong>, scelta per rompere un po’ la serietà dell’esterno e aggiungere quel dettaglio inaspettato che rende ogni pezzo personale. Elegante quando serve, ma pensata per essere usata anche dopo la festa.</p></div></div>
-<div class="classy-gallery"><img src="media/lamami-032.webp" alt="M bag e dettaglio fodera" loading="lazy"><img src="media/lamami-033.webp" alt="M bag" loading="lazy"><img class="wide" src="media/lamami-034.webp" alt="M bag alla luce" loading="lazy"></div><div class="classy-note"><h3>Partiamo da qui, poi rendiamola tua.</h3><p>Colori, cordini, fodere, lunghezza della tracolla e dettagli possono essere personalizzati. Hai un'idea o un progetto da propormi? <a href="#contatti">Scrivimi in direct</a>.</p></div></div>
+<div class="classy-hero"><img src="media/lamami-006.webp" alt="M. bag" loading="lazy"><div class="classy-copy"><span class="eyebrow">Classy Bag · la borsa della testimone</span><h1>M. bag</h1><p>Anche questa nasce per un matrimonio, ma questa volta per accompagnare la testimone.</p><p>L’idea era creare una borsa semplice e versatile, scegliendo però un materiale capace di darle quel qualcosa in più: il <strong>cordino lurex verde</strong>, che cattura la luce senza risultare eccessivo.</p><p>All’interno nasconde una piccola sorpresa: una <strong>fodera decorata con limoni e motivi botanici</strong>, scelta per rompere un po’ la serietà dell’esterno e aggiungere quel dettaglio inaspettato che rende ogni pezzo personale. Elegante quando serve, ma pensata per essere usata anche dopo la festa.</p></div></div>
+<div class="classy-gallery"><img src="media/lamami-032.webp" alt="M. bag e dettaglio fodera" loading="lazy"><img src="media/lamami-033.webp" alt="M. bag" loading="lazy"><img class="wide" src="media/lamami-034.webp" alt="M. bag alla luce" loading="lazy"></div><div class="classy-note"><h3>Partiamo da qui, poi rendiamola tua.</h3><p>Colori, cordini, fodere, lunghezza della tracolla e dettagli possono essere personalizzati. Hai un'idea o un progetto da propormi? <a href="#contatti">Scrivimi in direct</a>.</p></div></div>
 <div id="prodotto-vale" class="prodotto-detail classy-detail" style="display:none;">
 <div class="back-row"><a href="#articoli">← Torna agli articoli</a></div>
-<div class="classy-hero"><img src="media/lamami-007.webp" alt="V bag" loading="lazy"><div class="classy-copy"><span class="eyebrow">Classy Bag · stessa idea, un’altra personalità</span><h1>V bag</h1><p>V bag nasce come personalizzazione del modello Marti.</p><p>La forma rimane essenziale e versatile, ma la <strong>tracolla più lunga</strong> la rende ancora più comoda da portare sulla spalla. Il cordino lurex rosa, attraversato da piccoli riflessi argentati, mantiene quel tocco luminoso ed elegante che caratterizza il modello.</p><p>È completamente <strong>foderata</strong> e dotata di <strong>chiusura magnetica</strong>, per renderla bella ma anche pratica da usare. Perché partire dallo stesso modello non significa mai ottenere la stessa borsa.</p></div></div>
-<div class="classy-gallery"><img src="media/lamami-035.webp" alt="V bag dettaglio" loading="lazy"><img src="media/lamami-036.webp" alt="Interno e chiusura magnetica V bag" loading="lazy"><video class="wide" controls playsinline preload="metadata"><source src="media/lamami-037.mp4" type="video/mp4"></video></div><div class="classy-note"><h3>Partiamo da qui, poi rendiamola tua.</h3><p>Colori, cordini, fodere, lunghezza della tracolla e dettagli possono essere personalizzati. Hai un'idea o un progetto da propormi? <a href="#contatti">Scrivimi in direct</a>.</p></div></div>
+<div class="classy-hero"><img src="media/lamami-007.webp" alt="V. bag" loading="lazy"><div class="classy-copy"><span class="eyebrow">Classy Bag · stessa idea, un’altra personalità</span><h1>V. bag</h1><p>V. bag nasce come personalizzazione del modello Marti.</p><p>La forma rimane essenziale e versatile, ma la <strong>tracolla più lunga</strong> la rende ancora più comoda da portare sulla spalla. Il cordino lurex rosa, attraversato da piccoli riflessi argentati, mantiene quel tocco luminoso ed elegante che caratterizza il modello.</p><p>È completamente <strong>foderata</strong> e dotata di <strong>chiusura magnetica</strong>, per renderla bella ma anche pratica da usare. Perché partire dallo stesso modello non significa mai ottenere la stessa borsa.</p></div></div>
+<div class="classy-gallery"><img src="media/lamami-035.webp" alt="V. bag dettaglio" loading="lazy"><img src="media/lamami-036.webp" alt="Interno e chiusura magnetica V. bag" loading="lazy"><video class="wide" controls playsinline preload="metadata"><source src="media/lamami-037.mp4" type="video/mp4"></video></div><div class="classy-note"><h3>Partiamo da qui, poi rendiamola tua.</h3><p>Colori, cordini, fodere, lunghezza della tracolla e dettagli possono essere personalizzati. Hai un'idea o un progetto da propormi? <a href="#contatti">Scrivimi in direct</a>.</p></div></div>
 <div id="prodotto-ale" class="prodotto-detail classy-detail" style="display:none;">
 <div class="back-row"><a href="#articoli">← Torna agli articoli</a></div>
-<div class="classy-hero"><img src="media/lamami-008.webp" alt="A bag in montagna" loading="lazy"><div class="classy-copy"><span class="eyebrow">Classy Bag · semplice, ma con la luce giusta</span><h1>A bag</h1><p>A bag nasce dall’incontro tra una lavorazione a mattonelle e un <strong>cordino color champagne</strong>, luminoso senza essere appariscente.</p><p>La costruzione all’uncinetto diventa qui parte del design: le geometrie delle mattonelle creano il motivo della borsa senza bisogno di aggiungere altro. Il cordino fa il resto, cambiando leggermente aspetto a seconda della luce.</p><p>È una di quelle borse semplici da abbinare, ma abbastanza particolare da non passare inosservata.</p></div></div>
-<div class="classy-gallery"><img src="media/lamami-038.webp" alt="A bag dettaglio lavorazione" loading="lazy"><img class="wide" src="media/lamami-039.webp" alt="A bag dettaglio in montagna" loading="lazy"></div><div class="classy-note"><h3>Partiamo da qui, poi rendiamola tua.</h3><p>Colori, cordini, fodere, lunghezza della tracolla e dettagli possono essere personalizzati. Hai un'idea o un progetto da propormi? <a href="#contatti">Scrivimi in direct</a>.</p></div></div>
+<div class="classy-hero"><img src="media/lamami-008.webp" alt="A. bag in montagna" loading="lazy"><div class="classy-copy"><span class="eyebrow">Classy Bag · semplice, ma con la luce giusta</span><h1>A. bag</h1><p>A. bag nasce dall’incontro tra una lavorazione a mattonelle e un <strong>cordino color champagne</strong>, luminoso senza essere appariscente.</p><p>La costruzione all’uncinetto diventa qui parte del design: le geometrie delle mattonelle creano il motivo della borsa senza bisogno di aggiungere altro. Il cordino fa il resto, cambiando leggermente aspetto a seconda della luce.</p><p>È una di quelle borse semplici da abbinare, ma abbastanza particolare da non passare inosservata.</p></div></div>
+<div class="classy-gallery"><img src="media/lamami-038.webp" alt="A. bag dettaglio lavorazione" loading="lazy"><img class="wide" src="media/lamami-039.webp" alt="A. bag dettaglio in montagna" loading="lazy"></div><div class="classy-note"><h3>Partiamo da qui, poi rendiamola tua.</h3><p>Colori, cordini, fodere, lunghezza della tracolla e dettagli possono essere personalizzati. Hai un'idea o un progetto da propormi? <a href="#contatti">Scrivimi in direct</a>.</p></div></div>
 
 <div id="prodotto-mesh-hat" class="prodotto-detail">
   <a class="torna" href="#articoli">← Torna agli Articoli</a>
@@ -955,22 +962,15 @@ body.page-natale .christmas-section{margin-top:3rem;min-height:75vh}
 </div>
 
 
-<div id="prodotto-funny-beanies" class="prodotto-detail">
+<div id="prodotto-pumpkin-beanie" class="prodotto-detail">
   <a class="torna" href="#articoli">← Torna agli Articoli</a>
-  <div class="p-hero">
-    <img src="media/lamami-013.webp" alt="Funny Beanie a forma di zucca indossato">
-    <div class="p-hero-title"><span class="eyebrow">WINTERY VIBES · FUNNY BEANIES</span><h1>Funny Beanies</h1></div>
-  </div>
-  <div class="p-body">
-    <p class="balaclava-intro">Cappellini fatti a mano per giocare un po’ con l’inverno. Questi sono solo due esempi: <strong>uno a forma di zucca</strong> e <strong>uno con le orecchie da orsetto</strong>, completate da un piccolo anellino.</p>
-    <p class="balaclava-intro">Ma qui non ci sono regole: è tutto <strong>totalmente personalizzabile</strong> e qualsiasi idea è ben accetta. Colori, forme, dettagli strani o tenerissimi — possiamo inventarlo insieme. Disponibile anche in <strong>versione bambino</strong>. 🧶</p>
-    <div class="balaclava-gallery">
-      <img src="media/lamami-071.webp" alt="Funny Beanie marrone con orecchie da orsetto" loading="lazy" decoding="async">
-      <img src="media/lamami-072.webp" alt="Funny Beanie a forma di zucca, vista laterale" loading="lazy" decoding="async">
-      <img src="media/lamami-073.webp" alt="Funny Beanie con orecchie da orsetto, dettaglio" loading="lazy" decoding="async">
-    </div>
-    <p class="p-center">Hai un’idea per il tuo? <a href="#contatti">Scrivimi</a> e trasformiamola in un Funny Beanie.</p>
-  </div>
+  <div class="p-hero"><img src="media/lamami-013.webp" alt="Pumpkin Beanie arancione indossato"><div class="p-hero-title"><span class="eyebrow">WINTERY VIBES · PUMPKIN BEANIE</span><h1>Pumpkin Beanie</h1></div></div>
+  <div class="p-body"><p class="balaclava-intro">Un cappellino all’uncinetto a forma di <strong>zucca</strong>, allegro e originale. Colori e dettagli possono essere personalizzati, anche per i più piccoli.</p><div class="balaclava-gallery"><img src="media/lamami-013.webp" alt="Pumpkin Beanie arancione" loading="lazy"><img src="media/lamami-072.webp" alt="Pumpkin Beanie arancione visto di lato" loading="lazy"></div><p class="p-center">Hai un’idea per il tuo? <a href="#contatti">Scrivimi</a>!</p></div>
+</div>
+<div id="prodotto-bear-beanie" class="prodotto-detail">
+  <a class="torna" href="#articoli">← Torna agli Articoli</a>
+  <div class="p-hero"><img src="media/lamami-071.webp" alt="Bear Beanie con orecchie da orsetto"><div class="p-hero-title"><span class="eyebrow">WINTERY VIBES · BEAR BEANIE</span><h1>Bear Beanie</h1></div></div>
+  <div class="p-body"><p class="balaclava-intro">Un cappellino all’uncinetto con <strong>orecchie da orsetto</strong> e piccoli dettagli speciali. Personalizzabile nei colori e disponibile anche in versione bambino.</p><div class="balaclava-gallery"><img src="media/lamami-071.webp" alt="Bear Beanie marrone con orecchie" loading="lazy"><img src="media/lamami-073.webp" alt="Dettaglio del Bear Beanie con orecchie" loading="lazy"></div><p class="p-center">Hai un’idea per il tuo? <a href="#contatti">Scrivimi</a>!</p></div>
 </div>
 
 <div id="prodotto-classic-beanie" class="prodotto-detail">
@@ -1023,7 +1023,7 @@ body.page-natale .christmas-section{margin-top:3rem;min-height:75vh}
 <script>
 // Usa le foto già presenti nelle schede, senza duplicare i file incorporati.
 document.addEventListener('DOMContentLoaded',function(){
-  var pairs=[['balaclava','prodotto-balaclava-antonia'],['funny','prodotto-funny-beanies'],['classic','prodotto-classic-beanie','prodotto-fascia-lana']];
+  var pairs=[['balaclava','prodotto-balaclava-antonia'],['classic','prodotto-classic-beanie','prodotto-fascia-lana']];
   pairs.forEach(function(pair){var dst=document.querySelector('[data-christmas-product="'+pair[0]+'"]');var src=document.querySelector('#'+pair[1]+' .p-hero img');if(dst&&src){dst.src=src.currentSrc||src.src;}});
 });
 </script>
@@ -1057,7 +1057,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!catalogo) return;
   var groups = [
     {title:'Summery Vibes', ids:['prodotto-mesh-hat','prodotto-bandana','prodotto-fascia-cintura']},
-    {title:'Wintery Vibes', ids:['prodotto-balaclava-antonia','prodotto-funny-beanies','prodotto-classic-beanie','prodotto-fascia-lana']},
+    {title:'Wintery Vibes', ids:['prodotto-balaclava-antonia','prodotto-pumpkin-beanie','prodotto-bear-beanie','prodotto-classic-beanie','prodotto-fascia-lana']},
     {title:'Accessori', ids:['prodotto-portachiavi-anguria','prodotto-porta-girasole']}
   ];
   groups.forEach(function(group) {
